@@ -8,6 +8,7 @@ A comprehensive, modular Windows 10/11 optimization and setup utility designed f
 2.  Right-click `Launch-WinOptimizer.bat` and select **Run as Administrator**.
 3.  The script will automatically create a **System Restore Point** for safety.
 4.  Select an option from the menu to begin optimizing.
+<img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/925f672f-0310-4171-a9a9-7a8935afb7ea" />
 
 ---
 
