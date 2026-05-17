@@ -1,0 +1,42 @@
+{
+    "Version": "2.0.0",
+    "Bloatware": [
+        "Microsoft.XboxApp", "Microsoft.XboxGameOverlay", "Microsoft.XboxGamingOverlay",
+        "Microsoft.XboxIdentityProvider", "Microsoft.Xbox.TCUI", "Microsoft.MicrosoftTeams",
+        "Microsoft.BingWeather", "Microsoft.BingNews", "Microsoft.BingFinance",
+        "Microsoft.GetHelp", "Microsoft.Getstarted", "Microsoft.MicrosoftSolitaireCollection",
+        "Microsoft.People", "Microsoft.WindowsFeedbackHub", "Microsoft.ZuneMusic", "Microsoft.ZuneVideo",
+        "Microsoft.WindowsMaps", "Microsoft.YourPhone", "Microsoft.SkypeApp"
+    ],
+    "PrivacyTweaks": [
+        { "P": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\DataCollection", "N": "AllowTelemetry", "V": 0, "T": "DWord", "D": "Telemetry (Policies)" },
+        { "P": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection", "N": "AllowTelemetry", "V": 0, "T": "DWord", "D": "Telemetry (System)" },
+        { "P": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AdvertisingInfo", "N": "Enabled", "V": 0, "T": "DWord", "D": "Advertising ID" },
+        { "P": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\System", "N": "EnableActivityFeed", "V": 0, "T": "DWord", "D": "Activity Feed" },
+        { "P": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Search", "N": "BingSearchEnabled", "V": 0, "T": "DWord", "D": "Bing Search" },
+        { "P": "HKCU:\\Control Panel\\International\\User Profile", "N": "HttpAcceptLanguageOptOut", "V": 1, "T": "DWord", "D": "Language List Access" }
+    ],
+    "ServicesToDisable": ["DiagTrack", "dmwappushservice", "WerSvc", "SysMain", "WSearch"],
+    "DevApps": [
+        { "Id": "Git.Git", "Name": "Git" },
+        { "Id": "OpenJS.NodeJS.LTS", "Name": "NodeJS" },
+        { "Id": "Python.Python.3", "Name": "Python" },
+        { "Id": "Microsoft.VisualStudioCode", "Name": "VSCode" },
+        { "Id": "Docker.DockerDesktop", "Name": "Docker Desktop" }
+    ],
+    "ScheduledTasksToDisable": [
+        "\\Microsoft\\Windows\\Application Experience\\Microsoft Compatibility Appraiser",
+        "\\Microsoft\\Windows\\Application Experience\\ProgramDataUpdater",
+        "\\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator"
+    ],
+    "VisualTweaks": [
+        { "P": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\VisualEffects", "N": "VisualFXSetting", "V": 2, "T": "DWord", "D": "Performance Visual Effects" },
+        { "P": "HKCU:\\Control Panel\\Desktop", "N": "UserPreferencesMask", "V": [144, 18, 3, 128], "T": "Binary", "D": "Disable Animations" },
+        { "P": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize", "N": "EnableTransparency", "V": 0, "T": "DWord", "D": "Disable Transparency" }
+    ],
+    "ContextMenuCleanup": [
+        { "P": "HKCR:\\Directory\\Background\\shell\\AnyCode", "D": "Remove 'Open with Code' from BG" },
+        { "P": "HKCR:\\Directory\\shell\\AnyCode", "D": "Remove 'Open with Code' from Folder" },
+        { "P": "HKCR:\\*\\shell\\share", "D": "Remove 'Share'" }
+    ]
+}
