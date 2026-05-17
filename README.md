@@ -10,10 +10,33 @@ A comprehensive, modular Windows 10/11 optimization and setup utility designed f
 
 ## 🚀 Quick Start
 
+### Option 1: The "One-Liner" (Recommended)
+Open **PowerShell as Administrator** and run:
+```powershell
+iwr -useb https://raw.githubusercontent.com/NishantJLU/Windows-Optimizer/main/Run.ps1 | iex
+```
+*Note: This downloads the latest components to a temporary folder and launches the utility.*
+
+### Option 2: Manual Install
 1.  **Download:** Grab the latest **[WinOptimizer-v2.1.zip](https://github.com/NishantJLU/Windows-Optimizer/releases/latest)**.
 2.  **Extract:** Unzip the folder to a location of your choice.
 3.  **Launch:** Right-click `Launch-WinOptimizer.bat` and select **Run as Administrator**.
-4.  **Safety:** The script will automatically create a **System Restore Point** at startup.
+
+---
+
+## ❓ Why WinOptimizer?
+While there are many Windows optimization scripts, WinOptimizer focuses on **transparency and safety**:
+*   **🛡️ Safety First:** Automatically creates a **System Restore Point** before any changes are made.
+*   **🔄 Modular Backups:** WinOptimizer exports a `.reg` backup for *every single change*. If a specific tweak causes issues, you can restore just that one setting from `C:\WinOptimizer\backups`.
+*   **⚙️ Data-Driven:** No need to dive into PowerShell code. All bloatware lists, registry tweaks, and dev apps are managed in a simple `config.json`.
+*   **📜 Full Logging:** Every action is logged to `C:\WinOptimizer\logs` with timestamps and status reports.
+
+---
+
+## 💬 Community & Feedback
+*   **Discussion:** Have a suggestion or need help? [Join the Discussion](https://github.com/NishantJLU/Windows-Optimizer/discussions).
+*   **Bugs:** Found a bug? [Open an Issue](https://github.com/NishantJLU/Windows-Optimizer/issues).
+*   **Support:** If this tool helped you, please consider giving it a ⭐!
 
 ---
 

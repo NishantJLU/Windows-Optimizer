@@ -605,7 +605,12 @@ while ($true) {
         }
         "R" { Restore-Backups }
         "S" { Create-RestorePoint }
-        "Q" { exit }
+        "Q" { 
+            Write-Host "`nThank you for using WinOptimizer!" -ForegroundColor Green
+            Write-Host "Enjoying the tool? Consider giving us a ⭐ on GitHub:" -ForegroundColor Cyan
+            Write-Host "https://github.com/NishantJLU/Windows-Optimizer" -ForegroundColor Yellow
+            exit 
+        }
     }
     Read-Host "`nPress Enter to return to menu..."
 }
